@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+void square(){
+	int a;
+	cout<<"Enter a Number: ";
+	cin>>a;
+	cout<<"The square of Entered Number is: "<<a*a;
+}
+int main(){
+	square();
+}
