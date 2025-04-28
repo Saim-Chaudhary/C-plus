@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	
+	// Age Calculator in Days and Weeks
+	
+   int a;
+   int ageinDays=365;
+   int ageinWeeks=52;
+   cout<<"Enter age in Years= ";
+   cin>>a;
+   
+   a=a*ageinDays;
+   cout<<"Your Age in Years is= "<<a<<endl;
+   a=a*ageinWeeks;
+   cout<<"Your Age in Days is= "<<a<<endl;
+   
+    return 0;
+}
