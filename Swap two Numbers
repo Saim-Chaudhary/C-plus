@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+void swap(int x, int y){
+	cout<<"First Value :"<<x<<endl;
+	cout<<"Second Value :"<<y<<endl;
+	int temp;
+	temp=x;
+	x=y;
+	y=temp;
+	cout<<"First Value :"<<x<<endl;
+	cout<<"Second Value :"<<y<<endl;
+}
+int main(){
+	int a,b;
+	cout<<"Entre First Number: ";
+	cin>>a;
+	cout<<"Enter Second Number: ";
+	cin>>b;
+	swap(a,b);
+}
