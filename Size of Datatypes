@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+
+    int main() {
+       cout<<"The size of Datatypes in C++ is\n";
+       cout<<"The size of Int Datatyps is="<<sizeof(int)<<endl;
+       cout<<"The size of Char Datatyps is="<<sizeof(char)<<endl;
+       cout<<"The size of Float Datatyps is="<<sizeof(float)<<endl;
+       cout<<"The size of Double Datatyps is="<<sizeof(double)<<endl;
+       cout<<"The size of Short Datatyps is="<<sizeof(short)<<endl;
+    
+
+        return 0;
+    }
