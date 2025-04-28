@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int a,b,c;
+	cout<<"Address of Variable A is: ";
+	cout<<&a<<endl;
+	cout<<"Address of Variable B is: ";
+	cout<<&b<<endl;
+	cout<<"Address of Variable C is: ";
+	cout<<&c<<endl;
+}
