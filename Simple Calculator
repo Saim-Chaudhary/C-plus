@@ -1,0 +1,54 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+    int n, i;
+    char ch;
+    bool exit = false; // Variable to control the loop
+        while (!exit) { // Loop until exit is true
+        cout << "Menu" << endl;
+        cout << "1. Addition" << endl;
+        cout << "2. Subtraction" << endl;
+        cout << "3. Multiplication" << endl;
+        cout << "4. Division" << endl;
+        cout << "5. Average" << endl;
+        cout << "Press 0 to Exit" << endl;
+        cout << "-------------------------" << endl;
+        cout << "Enter two Numbers: " << endl;
+        cin >> n;
+        cin >> i;
+        cout << "Choose an Operator(+, -, *, /, A) or press 0 to exit: " << endl;
+        cin >> ch;
+        
+        if (ch == '0') {
+            exit = true; // Exit the loop if user inputs 0
+        } else {
+            switch (ch) {
+                case '+':
+                    cout << "Your Number is: " << n + i << endl;
+                    break;
+                case '-':
+                    cout << "Your Number is: " << n - i << endl;
+                    break;
+                case '*':
+                    cout << "Your Number is: " << n * i << endl;
+                    break;
+                case '/':
+                    if (i != 0) {
+                        cout << "Your Number is: " << n / i << endl;
+                    } else {
+                        cout << "Cannot divide by zero!" << endl;
+                    }
+                    break;
+                case 'A':
+                case 'a':
+                    cout << "Average of " << n << " and " << i << " is: " << (n + i) / 2.0 << endl;
+                    break;
+                default:
+                    cout << "Wrong Operator" << endl;
+            }
+        }
+    }
+    cout << "Exiting the program. Goodbye!" << endl;
+    return 0;
+}
